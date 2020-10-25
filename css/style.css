@@ -1,0 +1,48 @@
+*{
+    margin:0 ;
+}
+.minCotiner{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    height:100px;
+    width:100%;
+    background-color: aquamarine;
+    margin-top: 0;
+    
+}
+
+#mnue{
+    background-color: beige;
+    height: 50px;
+    width: 100%;
+}
+ul{
+    display: inline;
+  
+}
+li{
+    float:left;
+    list-style-type: none;
+   padding-left:40px;
+   font-size: 18px;
+}
+
+#mnue ul li a {
+    text-decoration: none;
+    color:black;
+}
+.contenet ,.frm {
+    background-color: yellowgreen;
+    width:100%;
+
+    height:550px;
+}
+.footer{
+    position: relative;
+    background-color: green;
+    width:100%;
+    margin:0 auto ;
+    height:50px; 
+}

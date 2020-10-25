@@ -9,7 +9,7 @@
 
 #header {
     height: 100px;
-    width: 1400px;
+    width: 100%;
     background-color: #1a0000;
     background-image: url("/image/ezgif.com-gif-maker.jpg");
     /* The image used */
@@ -97,10 +97,13 @@ li {
 }
 
 .table {
-    width: 100%;
+    width: 80%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
 }
 
 td,

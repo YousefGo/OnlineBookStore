@@ -11,12 +11,10 @@ body {
     /* full window width */
     text-align: center;
     max-width: 100%;
-    background-color: #F4A460;
     overflow-x: hidden;
     background-image: url("../image/Bg.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    overflow-wrap: break-word;
 }
 
 .minCotiner {

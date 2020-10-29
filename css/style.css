@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -8,16 +9,14 @@ body {
 }
 
 .minCotiner {
-    height: 100%;
-    width: 1400px;
+    width: 100%px;
+    height: 700px;
 }
 
 #header {
     height: 100px;
     width: 100%;
-    background-color: #1a0000;
-    background-image: url("../image/head.jpg");
-    /* The image used */
+    background-color: #F4A460;
 }
 
 .header-item {
@@ -25,7 +24,7 @@ body {
     width: 100%;
     margin-bottom: 20px;
     vertical-align: middle;
-    color: #cc9900;
+    color: #F5DEB3;
     position: absolute;
     top: 33px;
     margin-left: 100px;
@@ -55,7 +54,7 @@ li {
 #mnue ul li a {
     text-decoration: none;
     font-style: bold;
-    color: #663300;
+    color: #D2B48C;
 }
 
 #mnue ul li a:hover {
@@ -71,10 +70,20 @@ li {
     width: 100%;
     border-color: blue;
     background-color: white;
-    height: 550px;
     background-image: url("../image/Bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 1350px 550px;
+    background-repeat: repeat-y;
+    background-size: 100% 550px;
+    margin: 0 auto;
+}
+
+.contOffers {
+    height: 1100px;
+    width: 100%;
+    border-color: blue;
+    background-color: white;
+    background-image: url("../image/Bg.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% 550px;
     margin: 0 auto;
 }
 
@@ -91,7 +100,6 @@ li {
 }
 
 .footer {
-    position: relative;
     background-color: #332600;
     width: 100%;
     margin: 0 auto;
@@ -120,10 +128,22 @@ tr {
     font-size: 18px;
     font-style: bold;
     width: 20%;
+    text-align: center;
 }
 
 th {
     background-color: brown;
+    font-size: 20px;
+    color: #CD853F;
+}
+
+.tms2 {
+    color: white;
+    text-align: center;
+}
+
+td {
+    color: #A52A2A;
 }
 
 .icon {
@@ -148,6 +168,7 @@ th {
 input[type=text],
 input[type=email],
 input[type=Number],
+input[type=tel],
 select {
     width: 50%;
     padding: 10px 10px;
@@ -156,6 +177,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    margin-left: 10px;
 }
 
 input[type=submit] {
@@ -163,10 +185,17 @@ input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 4px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #1a0000;
+    color: white;
+    font-style: bold;
 }
 
 input[type=submit]:hover {
@@ -182,4 +211,50 @@ input[type=submit]:hover {
     text-align: center;
     color: brown;
     background-color: #ffb366;
+}
+
+.tms {
+    color: #F5DEB3;
+    text-align: center;
+    color: brown;
+}
+
+.e1 {
+    width: 40%;
+    height: 220px;
+    background-color: #f1d1ac;
+    margin: 2.5% 5%;
+    float: left;
+    border-radius: 10px;
+}
+
+.hinbox {
+    margin-left: 30%;
+    margin-top: 20%;
+    color: rgb(82, 57, 47);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: coral;
+}
+
+.e1:hover {
+    background-color: brown;
+}
+
+.box {
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    min-width: 30%;
+}
+
+label {
+    color: brown;
+    font-size: 14px;
+    font-style: oblique;
 }

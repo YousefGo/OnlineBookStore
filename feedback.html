@@ -4,6 +4,8 @@
 <HEAD>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta charset="utf-8">
+    <meta name="description" content="feedback about al-noor website ">
+    <meta name="keywords" content="contactus , al-noor ,bookstore ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title> feedback page</title>
@@ -30,7 +32,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="OffersBook.html">Offers books</a></li>
-                <li><a href="sellbooks.html">Sell Books</a></li>
+                <li><a href="orderBook.html">Order</a></li>
                 <li><a href="feedback.html">FeedBack</a></li>
 
             </ul>
@@ -43,25 +45,36 @@
 
             <div class="frm">
                 <!-- form dic-->
-                <h1>Write your book info </h1>
                 <form action="#" class="frm2">
                     <div>
 
-                        <label for="name">
+                        <label for="name" required>
                         Name
                     </label>
 
-                        <input type="text">
+                        <input type="text" required>
 
                     </div>
 
                     <div>
 
-                        <label for="name">
+                        <label for="email" required>
                         Email
                     </label>
 
-                        <input type="email">
+                        <input type="email" required>
+
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="phone">
+                        Phone
+                    </label>
+
+                        <input type="tel" required>
 
 
                     </div>
@@ -69,7 +82,7 @@
                     <div>
 
 
-                        <label for="name">
+                        <label for="subject" required>
                         Subject 
                     </label>
                         <select name="subject" id="sub">
@@ -78,17 +91,16 @@
                         <option value="Complaint">Complaint</option>
                         <option value="Idea">Idea</option>
                         <option value="help">help</option>
-                        <option value="orderNeWBook">Order New book </option>
+                        <option value="other">other </option>
                     </select>
 
                     </div>
 
                     <div>
 
+                        <label for=""> <h3>Your Meassge</h3></label>
 
-                        <h1>Message</h1>
-
-                        <textarea cols="40" rows="10">
+                        <textarea cols="40" rows="8">
 
      </textarea>
                     </div>
@@ -108,12 +120,13 @@
             </form>
 
         </div>
+
+        <div class="footer">
+            <p> created by @RootTeam 2020 </p>
+        </div>
     </div>
     <!-- end  main div -->
-    <div class="footer">
-        <p> created by @RootTeam 2020 </p>
-    </div>
-    </div>
+
 
 </body>
 

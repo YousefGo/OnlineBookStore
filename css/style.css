@@ -14,6 +14,8 @@ body {
     background-color: #F4A460;
     overflow-x: hidden;
     background-image: url("../image/Bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     overflow-wrap: break-word;
 }
 
@@ -31,12 +33,10 @@ body {
 .header-item {
     height: 70px;
     width: 100%;
-    margin-bottom: 20px;
-    vertical-align: middle;
     color: #F5DEB3;
-    top: 33px;
-    margin-left: -300px;
-    font-size: 42px;
+    padding-top: 35px;
+    padding-left: 550;
+    font-size: 30px;
 }
 
 #mnue {
@@ -249,4 +249,9 @@ label {
     color: brown;
     font-size: 14px;
     font-style: oblique;
+}
+
+.imgtable {
+    width: 250px;
+    height: 100px;
 }

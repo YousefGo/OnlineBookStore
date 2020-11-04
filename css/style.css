@@ -1,11 +1,12 @@
+/* reset all elemtn stening */
+
 * {
     margin: 0;
 }
 
 
-/* reset all elemtn stening */
+/*  set body proparty   */
 
-html,
 body {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -18,12 +19,18 @@ body {
     background-size: cover;
 }
 
+
+/*  min contianter have every things  */
+
 .minCotiner {
     width: 100%px;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
+
+
+/*  heear have website name style   */
 
 #header {
     height: 50px;
@@ -41,11 +48,17 @@ body {
     opacity: 90%;
 }
 
+
+/*  menue par  */
+
 #mnue {
     background-color: #492313;
     height: 30px;
     width: 100%;
 }
+
+
+/* unorderd list   */
 
 ul {
     display: inline;
@@ -54,6 +67,9 @@ ul {
     text-align: center;
 }
 
+
+/*   style every elenments in list */
+
 li {
     float: left;
     list-style-type: none;
@@ -61,11 +77,17 @@ li {
     font-size: 24px;
 }
 
+
+/*  link to all pages  */
+
 #mnue ul li a {
     text-decoration: none;
     font-style: bold;
     color: #D2B48C;
 }
+
+
+/*   style every link in list */
 
 #mnue ul li a:hover {
     text-decoration: none;
@@ -74,6 +96,9 @@ li {
     background-color: #663300;
     ;
 }
+
+
+/*   style contenet in ceter of pager  */
 
 .contenet {
     height: 540px;
@@ -92,10 +117,8 @@ li {
     margin: 20px auto;
 }
 
-.img {
-    width: 700px;
-    height: 550px;
-}
+
+/*  styel table of books in website  */
 
 .table {
     width: 90%;
@@ -109,6 +132,9 @@ li {
     border: 5px solid black;
     border-collapse: collapse;
 }
+
+
+/*  style every cells  */
 
 td,
 th,
@@ -132,18 +158,16 @@ th {
     text-align: center;
 }
 
+
+/* text of book name  */
+
 td {
     color: #A52A2A;
     font-size: 30px;
 }
 
-.icon {
-    height: 120px;
-    width: 120px;
-    margin-top: -30px;
-    display: inline;
-    float: left;
-}
+
+/*  styel of frime */
 
 .frm2 {
     background-color: burlywood;
@@ -156,6 +180,9 @@ td {
     opacity: 90%;
     border-radius: 20%;
 }
+
+
+/*  styel all inout */
 
 input[type=text],
 input[type=email],
@@ -171,6 +198,9 @@ select {
     margin: 7.5px 15px;
     opacity: 100%;
 }
+
+
+/* button   style  */
 
 .btn {
     width: 70%;
@@ -196,7 +226,6 @@ select {
     padding: 10px 10px;
     margin: 8px 0;
     border-radius: 10px;
-    font-size: 24px;
 }
 
 input:focus,
@@ -246,6 +275,9 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 
+
+/*  when click two boxes  */
+
 .link:hover {
     color: coral;
 }
@@ -254,11 +286,17 @@ input[type=submit]:hover {
     background-color: brown;
 }
 
+
+/*  contelor of boxes  */
+
 .box {
     margin: 0 auto;
     width: 80%;
     min-width: 30%;
 }
+
+
+/* style label text  */
 
 label {
     margin-right: 10px;
@@ -268,10 +306,16 @@ label {
     font-size: 24px;
 }
 
+
+/*  style td image */
+
 .imgtable {
     width: 100%;
     height: 200px;
 }
+
+
+/*  styel inteordoctin statmens in index page   */
 
 .text {
     color: white;
@@ -282,11 +326,17 @@ label {
     margin-top: 20px;
 }
 
+
+/* style textare   */
+
 textarea {
     width: 70%;
-    height: 100px;
+    height: 70px;
     margin-left: 10%;
 }
+
+
+/*   style price text  */
 
 .pirce {
     font-size: 50px;

@@ -252,6 +252,9 @@ input[type=submit]:hover {
     color: #F5DEB3;
     text-align: center;
     color: brown;
+    font-size: 2em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .e1 {
@@ -304,6 +307,7 @@ label {
     font-size: 14px;
     font-style: oblique;
     font-size: 24px;
+    width: 30%;
 }
 
 

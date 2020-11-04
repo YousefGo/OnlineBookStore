@@ -111,9 +111,8 @@ li {
     width: 100%;
     border-color: blue;
     background-color: white;
-    background-image: url("../image/Bg.jpg");
-    background-repeat: repeat-y;
-    background-size: 100% 550px;
+    background-image: url(../image/pexels-genaro-servín-757855.jpg);
+    background-size: cover;
     margin: 20px auto;
 }
 

@@ -1,44 +1,47 @@
 * {
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+/* reset all elemtn stening */
 
 html,
 body {
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0;
     width: 100%;
-    /* full window width */
     text-align: center;
     max-width: 100%;
     overflow-x: hidden;
-    background-image: url("../image/Bg.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: #F4A460;
+    background-image: url(../image/pexels-genaro-servín-757855.jpg);
+    background-size: cover;
 }
 
 .minCotiner {
     width: 100%px;
     height: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 #header {
-    height: 100px;
+    height: 40px;
     width: 100%;
-    background-color: #F4A460;
+    margin: 20px;
 }
 
 .header-item {
-    height: 70px;
+    height: 100%;
     width: 100%;
-    color: #F5DEB3;
-    padding-top: 35px;
-    padding-left: 550;
-    font-size: 30px;
+    color: #ffb366;
+    font-size: 40px;
+    text-align: left;
 }
 
 #mnue {
-    background-color: #1a0000;
+    background-color: #492313;
     height: 30px;
     width: 100%;
 }
@@ -72,9 +75,10 @@ li {
 }
 
 .contenet {
-    height: 550px;
+    height: 650px;
     width: 100%;
     margin: 0 auto;
+    overflow-y: hidden;
 }
 
 .contOffers {
@@ -91,13 +95,6 @@ li {
 .img {
     width: 700px;
     height: 550px;
-}
-
-.footer {
-    background-color: #332600;
-    width: 100%;
-    margin: 0 auto;
-    height: 20px;
 }
 
 .table {
@@ -151,7 +148,7 @@ td {
 .frm2 {
     background-color: burlywood;
     width: 40%;
-    height: 480px;
+    height: 450px;
     margin: 0 auto;
     position: relative;
     top: 50px;
@@ -201,6 +198,9 @@ input[type=submit]:hover {
     text-align: center;
     color: brown;
     background-color: #ffb366;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
 }
 
 .tms {
@@ -210,8 +210,8 @@ input[type=submit]:hover {
 }
 
 .e1 {
-    width: 40%;
-    height: 200px;
+    width: 38%;
+    height: 100px;
     background-color: #f1d1ac;
     margin: 2.5% 5%;
     float: left;
@@ -219,8 +219,8 @@ input[type=submit]:hover {
 }
 
 .hinbox {
-    margin-left: 30%;
-    margin-top: 20%;
+    margin-left: 5%;
+    margin-top: 20px;
     color: rgb(82, 57, 47);
 }
 
@@ -256,4 +256,9 @@ label {
 
 .text {
     color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: brown;
+    display: inline-block;
+    margin-top: 20px;
 }

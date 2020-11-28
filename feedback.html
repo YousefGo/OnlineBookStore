@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<HTML>
+<HTML lang="en">
 
 <HEAD>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="author" content="Yousef mohammed">
 
     <meta charset="utf-8">
     <meta name="description" content="feedback about al-noor website ">
     <meta name="keywords" content="contactus , al-noor ,bookstore ">
-
+    <script src="js/script.js"></script>
     <title> feedback page</title>
 </HEAD>
 
@@ -30,7 +31,6 @@
                 <li><a href="OffersBook.html">Offers books</a></li>
                 <li><a href="orderBook.html">Order</a></li>
                 <li><a href="feedback.html">FeedBack</a></li>
-
             </ul>
         </div>
         <!--  end of mnue -->
@@ -41,103 +41,130 @@
 
             <div class="frm">
                 <!-- form dic-->
-                <form action="#" class="frm2">
+                <form action="#" class="frm2" method="post" onsubmit=" return validateFeedback()">
                     <h1 class="tms">Put your feedback</h1>
-                    <div>
 
-                        <label for="name">
-                        Name
+                    <label>
+                            <div>
+                            <div class="rt">
+                               Name 
+                             
+                            </div>
+                            <div id="errName" class="Err"></div>
+                      
                     </label>
-                        <!-- ------------------------------- -->
+                    <!--____________________________________-->
 
-                        <input type="text" required placeholder="Please Enter your name ">
+                    <input type="text" placeholder="Please Enter your name " id="name" onfocus=" changeBack1()" onfocusout="changeBack2()" onkeyup="checkDigit()" onblur="checkDiget2()">
 
-                    </div>
-                    <!-- ------------------------------- -->
 
-                    <div>
+            </div>
+            <!--____________________________________-->
 
-                        <label for="email">
+            <div>
+
+                <label id="">
+
+                            <div class="rt">
+                                
+                            
                         Email
+                        </div>
+                        <div id="errEmail"></div>
+
                     </label>
-                        <!-- ------------------------------- -->
+                <!--____________________________________-->
 
-                        <input type="email" required placeholder="Please Enter your email ">
+                <input type="text" placeholder="Please Enter your email " id="em" onfocus=" changeBack3()" onfocusout="changeBack4()">
 
-                        <!-- ------------------------------- -->
+                <!--____________________________________-->
 
-                    </div>
+            </div>
 
 
-                    <div>
+            <div>
 
-                        <label for="phone">
-                        Phone
+                <label>
+                         <div class="rt">
+                            Phone
+                        </div>
+                        <div id="phoneErr"></div>
+
                     </label>
-                        <!-- ------------------------------- -->
+                <!--____________________________________-->
 
-                        <input type="tel" required placeholder="Please Enter your phone ">
+                <input type="text" placeholder="Please Enter your phone " onfocus=" changeBack5()" onfocusout="changeBack6()" id="phone">
 
-                        <!-- ------------------------------- -->
+                <!--____________________________________-->
 
-                    </div>
+            </div>
 
-                    <div>
+            <div>
 
-                        <!-- ------------------------------- -->
+                <!--____________________________________-->
 
-                        <label for="subject">
-                        Subject 
+                <label>
+                        
+                        <div class="rt">
+                            Subject      
+                        </div>
+                        <div id="selErr"></div>
+
                     </label>
-                        <select name="subject" id="sub">
-                        <option select hidden> Chose your Subnect </option>
+
+                <select name="subject" id="sub" onfocus=" changeBack7()" onfocusout="changeBack8()">
+                        <option selected hidden> Chose your Subnect </option>
                         <option value="Suggestion">Suggestion</option>
                         <option value="Complaint">Complaint</option>
                         <option value="Idea">Idea</option>
                         <option value="help">help</option>
                         <option value="other">other </option>
                     </select>
-                        <!-- ------------------------------- -->
-
-                    </div>
-                    <!-- ------------------------------- -->
-
-                    <div>
-                        <label for="subject">
-                        <h4>Deatil</h4> 
-                        </label>
-
-                        <textarea cols=20 rows=5 placeholder="Please Enter your phone ">
-
-     </textarea>
-                    </div>
-                    <!-- ------------------------------- -->
-
-
-
-
-
-
-
-                    <button type="submit" class="btn">send</button>
-
-
-                    <!-- ------------------------------- -->
+                <!--____________________________________-->
 
             </div>
-            <!-- ------------------------------- -->
+            <!--____________________________________-->
+
+            <div>
+
+                <label id="ii">
+                    <div class="rt"> Deatil </div> 
+                    <div id="msgErr"></div>
+                       <br>
+                        </label>
+
+                <textarea cols=20 rows=5 id="msg" onfocus=" changeBack9()" onfocusout="changeBack10()">
+
+     </textarea>
+            </div>
+            <!--____________________________________-->
+
+
+
+
+
+
+
+            <button type="submit" class="btn">send</button>
+
+
+
+            <!--____________________________________-->
+
+            <!--____________________________________-->
 
             </form>
-            <!-- ------------------------------- -->
+            <!--____________________________________-->
 
         </div>
 
-        <div class="footer">
-            <p> created by @RootTeam 2020 </p>
-        </div>
+
+    </div>
+    <div class="footer">
+        <p> created by @RootTeam 2020 </p>
     </div>
     <!-- end  main div -->
-
+    </div>
 
 </body>
 

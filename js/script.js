@@ -1,16 +1,19 @@
+// this method for login forms validgie ; 
 function validateLogin() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-
-    if (!isEmpty(username) && !isEmpty(password)) {
+    //////////////////////////////////////////////////////////////////////////////
+    if (!isEmpty(username) && !isEmpty(password)) { // if no errors send to server 
 
         document.getElementById("errUsername").innerHTML = "";
         document.getElementById("errUsername").style.display = "none";
 
         document.getElementById("errPassword").innerHTML = "";
         document.getElementById("errPassword").style.display = "none";
+        alert("Secess semd ");
 
         return true;
+        ////////////////////////////////////////////////////////////////////////
     } else {
         var meassge = document.getElementById("errLogin");
         var errUsername = document.getElementById("errUsername");
@@ -24,7 +27,7 @@ function validateLogin() {
         errPassword.style.fontWeight = "900";
 
 
-
+        /////////////////////////////////////////////////////////////////////////////
         if (isEmpty(username) && isEmpty(password)) {
 
             errUsername.innerHTML = " * you have full up username   ";
@@ -45,7 +48,7 @@ function validateLogin() {
 }
 //-------------------------------------------------------------------------------------
 
-//------------- username method 
+//------------- check if empty 
 function isEmpty(a) {
     if (a.length == 0) {
 
@@ -59,8 +62,8 @@ function isEmpty(a) {
 function validateFeedback() {
 
     // && IsVaaildEmail(email) &&    !IsVaaildEmail(email)
-    if (IsContenct() & IsVaaildName() & IsVaaildEmail() & IsPhoneNumber() & IsSelected()) {
-
+    if (IsContenct() & IsVaaildName() & IsVaaildEmail() & IsPhoneNumber() & IsSelected()) { // if all filed ture then send to server 
+        alert("Secess semd ");
         return true;
 
     } else {
@@ -72,11 +75,13 @@ function validateFeedback() {
     }
 }
 
-function IsVaaildName() {
+function IsVaaildName() { // vaild name sould englihs letter captial and small no digit no smbpl  , if ture return ture 
+    // disapper style 
     var name = document.getElementById("errName");
     name.style.color = "red";
     name.display = "inline";
     if (isEmpty(document.getElementById("name").value) || document.getElementById("name").value.search(/^[A-Za-z'\-\._ ]{4,}$/) != 0) {
+        // apper error message 
         name.display = "block";
         name.style.fontWeight = "900";
         name.style.fontSize = "18px";
@@ -92,7 +97,7 @@ function IsVaaildName() {
 }
 
 
-function IsVaaildEmail() {
+function IsVaaildEmail() { // valudite email useing regex 
     var emailErr = document.getElementById("errEmail");
     var t = document.getElementById("em").value.search(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) != 0;
     if (t || isEmpty(document.getElementById("em"))) {
@@ -117,8 +122,8 @@ function IsVaaildEmail() {
 
 
 }
-
-function IsPhoneNumber() {
+/////////////////////////////////////////////////////////////////////////////
+function IsPhoneNumber() { // valudite saude phone number 
     var Rphone = document.getElementById("phone").value.search(/^(05\d{8}|9665\d{8})$/) != 0;
     var m = document.getElementById("phoneErr");
     if (Rphone || isEmpty(document.getElementById("phone"))) {
@@ -142,7 +147,7 @@ function IsPhoneNumber() {
     }
 
 }
-
+// check if contefcnt are not empty 
 function IsContenct() {
     var t = document.getElementById("msgErr");
 
@@ -155,7 +160,7 @@ function IsContenct() {
 
         t.display = "block";
         t.style.fontWeight = "900";
-        t.innerHTML = "*please write a detail  ";
+        t.innerHTML = "*please write more then statmens   ";
         return false;
     } else {
 
@@ -165,7 +170,7 @@ function IsContenct() {
         return true;
     }
 }
-
+// check if any items selct from list 
 function IsSelected() {
     var t = document.getElementById("sub").value == "Chose your Subnect";
 
@@ -186,7 +191,7 @@ function IsSelected() {
         return true;
     }
 }
-
+// on keyup methods here 
 function checkDigit() {
 
 
@@ -216,10 +221,8 @@ function checkDigit() {
 //-------------------------
 function checkDiget2() {
     var str = document.getElementById("name").value;
-
-    var t = str.search((/^[A-Za-z][A-Za-z]*$/)) == 0;
-
-
+    var letters = /^[A-Za-z]+$/;
+    var t = str.match(letters);
     if (t) {
         var name = document.getElementById("errName");
 
@@ -232,9 +235,9 @@ function checkDiget2() {
         name.style.color = "red";
         name.display = "inline";
         name.style.fontWeight = "900";
-        name.display = "inline";
-        name.fontSize = "16px";
-        name.innerHTML = "* full up filed or remomve number " + "</br>";
+        name.style.marginLeft = "180px";
+        name.fontSize = "8";
+        name.innerHTML = "<h5>* Invaild Name ,remove numbers ,whitespace ,empty </h5>";
     }
 
 }
@@ -242,32 +245,48 @@ function checkDiget2() {
 function changeBack1() {
     var t = document.getElementById("name");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
+
+
 }
 
 function changeBack2() {
     var m = document.getElementById("name");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
 
 function changeBack3() {
     var t = document.getElementById("em");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
+
+
 }
 
 function changeBack4() {
     var m = document.getElementById("em");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
 
 
 function changeBack5() {
     var t = document.getElementById("phone");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
 }
 
 function changeBack6() {
     var m = document.getElementById("phone");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
 
 
@@ -275,11 +294,15 @@ function changeBack6() {
 function changeBack7() {
     var t = document.getElementById("sub");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
 }
 
 function changeBack8() {
     var m = document.getElementById("sub");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
 
 
@@ -287,29 +310,50 @@ function changeBack8() {
 function changeBack9() {
     var t = document.getElementById("msg");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
 }
 
 function changeBack10() {
     var m = document.getElementById("msg");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
 
 function changeBack11() {
     var t = document.getElementById("username");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
 }
 
 function changeBack12() {
     var m = document.getElementById("username");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
 
 function changeBack13() {
     var t = document.getElementById("password");
     t.style.backgroundColor = "yellow";
+    t.style.color = "brown";
+    t.style.fontSize = "16px";
 }
 
 function changeBack14() {
     var m = document.getElementById("password");
     m.style.backgroundColor = "white";
+    m.style.color = "brown";
+    m.style.fontSize = "16px";
 }
+
+document.getElementById("btn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "block";
+});
+
+
+document.getElementById("close").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});

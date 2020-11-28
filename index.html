@@ -13,7 +13,6 @@
     <meta name="keywords" content="order , al-noor ,buy ,book ">
 
     <!-- key words help seo -->
-    <script src="js/script.js"></script>
 
     <title> Home page</title>
     <!--Title of page -->
@@ -39,8 +38,9 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="OffersBook.html">Offers books</a></li>
-                <li><a href="orderBook.html">Order</a></li>
                 <li><a href="feedback.html">FeedBack</a></li>
+                <li> <button id="btn">LOGIN </button></li>
+
             </ul>
         </div>
         <!--  end of mnue -->
@@ -60,30 +60,33 @@
 
             </div>
 
+            <div id="popup">
+                <button id="close">x</button>
+                <script src="js/script.js"></script>
 
-            <div class="frm">
-                <!-- form dic-->
-                <form action="#" class="frm2" onsubmit=" return validateLogin()">
-                    <h1 class="tms">Log in </h1>
-                    <div>
+                <div class="frm">
+                    <!-- form dic-->
+                    <form action="#" class="frm2" onsubmit=" return validateLogin()">
+                        <h1 class="tms">Log in </h1>
+                        <div>
 
-                        <label id="name">
+                            <label id="name">
                          <div class="rt">   Name </div>
                          <span id="errUsername"> </span>
                         </br>
                         </label>
+                            <!--____________________________________-->
+
+                            <input type="text" placeholder="Please Enter your name " onfocus=" changeBack11()" onfocusout="changeBack12()" id="username">
+
+
+
+                        </div>
                         <!--____________________________________-->
 
-                        <input type="text" placeholder="Please Enter your name " onfocus=" changeBack11()" onfocusout="changeBack12()" id="username">
+                        <div>
 
-
-
-                    </div>
-                    <!--____________________________________-->
-
-                    <div>
-
-                        <label>
+                            <label>
                            
                             <div class="rt">
                                 password 
@@ -92,27 +95,27 @@
                         </br>
 
                         </label>
-                        <!--____________________________________-->
+                            <!--____________________________________-->
 
-                        <input type="password" placeholder="Please Enter your passwrod  " onfocus=" changeBack13()" onfocusout="changeBack14()" id="password">
+                            <input type="password" placeholder="Please Enter your passwrod  " onfocus=" changeBack13()" onfocusout="changeBack14()" id="password">
 
 
-                        <!--____________________________________-->
+                            <!--____________________________________-->
 
-                    </div>
+                        </div>
 
-                    <div>
-                        <input type="checkbox" id="remmberPassword" name="remmberPassword" value="true">
-                        <label for="remmberMe" class="lbl">  Remmber me </label>
-                        <button type="submit" class="btn">Log in </button>
+                        <div>
+                            <input type="checkbox" id="remmberPassword" name="remmberPassword" value="true">
+                            <label for="remmberMe" class="lbl">  Remmber me </label>
+                            <button type="submit" class="btn">Log in </button>
 
-                    </div>
+                        </div>
+
+                </div>
+
 
             </div>
-
-
         </div>
-
 
         <!-- -->
 
